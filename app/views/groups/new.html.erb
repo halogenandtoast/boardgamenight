@@ -1,0 +1,9 @@
+<%= form_for @group do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.submit "Create" %>
+  </div>
+<% end %>

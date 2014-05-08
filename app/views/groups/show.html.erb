@@ -1,0 +1,7 @@
+<h1><%= @group.title %></h1>
+
+<ul>
+  <% @group.members.each do |member| %>
+    <li class="member"><%= member.username %></li>
+  <% end %>
+</ul>
