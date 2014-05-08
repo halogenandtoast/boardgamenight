@@ -8,6 +8,10 @@
   </head>
   <body>
 
+    <header>
+      <%= link_to 'Dashboard', dashboard_path %>
+    </header>
+
     <% if signed_in? %>
       <%= link_to "Sign out", session_path, method: :delete %>
     <% else %>
