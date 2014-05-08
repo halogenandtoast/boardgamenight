@@ -1,1 +1,9 @@
 <%= link_to "Create group", new_group_path, data: { role: "create-group" } %>
+
+<ul>
+  <%= @groups.each do |group| %>
+    <%= content_tag_for(:li, group) do %>
+      <%= group.title %>
+    <% end %>
+  <% end %>
+</ul>

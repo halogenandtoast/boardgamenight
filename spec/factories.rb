@@ -7,4 +7,8 @@ FactoryGirl.define do
     email
     password_digest 'password'
   end
+
+  factory :group do
+    title "Group"
+  end
 end

@@ -10,7 +10,7 @@ class GroupsController < ApplicationController
 
   def create
     group = Group.create(group_params)
-    current_user.groups << group
+    current_user.join(group)
     redirect_to group
   end
 
