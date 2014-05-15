@@ -1,7 +1,15 @@
 <h1><%= @group.title %></h1>
 
-<ul>
+<ul class="members">
   <% @group.members.each do |member| %>
     <li class="member"><%= member.username %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add location", new_group_location_path(@group), data: { role: "add-location" } %>
+
+<ul class="locations">
+  <% @group.locations.each do |location| %>
+    <li class="location"><%= location.name %></li>
   <% end %>
 </ul>

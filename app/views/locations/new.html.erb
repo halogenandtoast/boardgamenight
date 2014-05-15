@@ -1,0 +1,9 @@
+<%= form_for [@group, @location] do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.submit "Add location" %>
+  </div>
+<% end %>
