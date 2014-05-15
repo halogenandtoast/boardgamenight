@@ -15,8 +15,4 @@ feature "User adds location" do
 
     expect(page).to have_css(".location", text: "hoge")
   end
-
-  def role(selector)
-    find("[data-role=#{selector}]")
-  end
 end

@@ -16,7 +16,7 @@ feature "User creates group" do
   end
 
   def create_group(name)
-    find("[data-role=create-group]").click
+    role("create-group").click
     fill_in "Title", with: name
     click_button "Create"
   end
