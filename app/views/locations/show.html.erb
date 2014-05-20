@@ -1,0 +1,13 @@
+<%= form_for [@group, @location] do |form| %>
+  <div>
+    <%= form.label :starts_on %>
+    <%= form.date_field :starts_on %>
+  </div>
+  <div>
+    <%= form.label :recurrence_rules, "When" %>
+    <%= form.select_recurring :recurrence_rules %>
+  </div>
+  <div>
+    <%= form.submit "Update Schedule" %>
+  </div>
+<% end %>

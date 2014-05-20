@@ -10,6 +10,6 @@
 
 <ul class="locations">
   <% @group.locations.each do |location| %>
-    <li class="location"><%= location.name %></li>
+    <li class="location"><%= link_to location.name, [@group, location] %></li>
   <% end %>
 </ul>

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   resource :dashboard, only: [:show]
   resources :groups, only: [:new, :create, :show] do
-    resources :locations, only: [:new, :create]
+    resources :locations, only: [:new, :create, :show, :update]
   end
 end

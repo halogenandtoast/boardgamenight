@@ -11,4 +11,8 @@ FactoryGirl.define do
   factory :group do
     title "Group"
   end
+
+  factory :location do
+    name "location"
+  end
 end
